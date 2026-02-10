@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pricing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="#" class="logo">
+                    <img src="images/git.png" alt="GitHub" class="logo-img">
+                    GitHub
+                </a>
+            </div>
+
+            <nav class="header-nav">
+                <a href="#platform" class="nav-link">Platform</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#resources" class="nav-link">Resources</a>
+                <a href="#opensource" class="nav-link">Open Source</a>
+                <a href="#enterprise" class="nav-link">Enterprise</a>
+                <a href="#pricing" class="nav-link active">Pricing</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Search">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                        <circle cx="6.5" cy="6.5" r="5.5"></circle>
+                        <path d="m10.5 10.5 5 5"></path>
+                    </svg>
+                    Search or jump to...
+                </button>
+                <a href="#signin" class="auth-link">Sign in</a>
+                <a href="#signup" class="auth-link signup-btn">Sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pricing-page">
+        <section class="hero-section">
+            <header class="hero-header">
+                <h1>Try the Copilot-powered platform</h1>
+                <p class="hero-description">
+                    Get enterprise-level control with the developer experience you know and love.
+                </p>
+                <button class="cta-button">Get started</button>
+            </header>
+        </section>
+
+        <section class="pricing-section">
+            <div class="pricing-container">
+                <div class="pricing-card free-tier">
+                    <div class="card-header">
+                        <h2 class="plan-name">Free</h2>
+                        <p class="plan-price">$0<span class="price-period">/month</span></p>
+                    </div>
+                    <p class="plan-description">For individuals and small teams</p>
+                    <button class="plan-button">Get started</button>
+                    <ul class="features-list">
+                        <li>✓ Unlimited public repositories</li>
+                        <li>✓ Community support</li>
+                        <li>✓ GitHub Pages</li>
+                        <li>✓ Basic CI/CD</li>
+                        <li>✗ Advanced security</li>
+                        <li>✗ Team management</li>
+                    </ul>
+                </div>
+                <div class="pricing-card team-tier featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="card-header">
+                        <h2 class="plan-name">Team</h2>
+                        <p class="plan-price">$21<span class="price-period">/month per user</span></p>
+                    </div>
+                    <p class="plan-description">For growing teams and organizations</p>
+                    <button class="plan-button cta-primary">Get started</button>
+                    <ul class="features-list">
+                        <li>✓ Everything in Free</li>
+                        <li>✓ Unlimited private repositories</li>
+                        <li>✓ Advanced security features</li>
+                        <li>✓ Team management tools</li>
+                        <li>✓ Code review automation</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+                </div>
+                <div class="pricing-card enterprise-tier">
+                    <div class="card-header">
+                        <h2 class="plan-name">Enterprise</h2>
+                        <p class="plan-price">Custom</p>
+                    </div>
+                    <p class="plan-description">For large-scale deployments</p>
+                    <button class="plan-button">Contact sales</button>
+                    <ul class="features-list">
+                        <li>✓ Everything in Team</li>
+                        <li>✓ Self-hosted or cloud deployment</li>
+                        <li>✓ Dedicated support</li>
+                        <li>✓ Advanced compliance</li>
+                        <li>✓ SSO and SAML</li>
+                        <li>✓ SLA guarantee</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="addons-section">
+            <header class="addons-header">
+                <h2>Additional add-ons</h2>
+                <p>Enhance your GitHub experience with premium features</p>
+            </header>
+
+            <div class="addons-grid">
+                <!-- Add-on 1: Copilot -->
+                <article class="addon-card">
+                    <h3 class="addon-name">GitHub Copilot</h3>
+                    <p class="addon-description">
+                        AI-powered code suggestions and generation to accelerate your development workflow.
+                    </p>
+                    <p class="addon-price">$10<span class="price-period">/month</span></p>
+                </article>
+
+                    <div class="addon-icon">🏢</div>
+                    <h3 class="addon-name">Copilot Business</h3>
+                    <p class="addon-description">
+                        Copilot for entire teams with organization-level management and customization.
+                    </p>
+                    <p class="addon-price">$19<span class="price-period">/month per user</span></p>
+                </article>
+
+                <!-- Add-on 3: Advanced Security -->
+                <article class="addon-card">
+                    <p class="addon-description">
+                        Vulnerability scanning, secret scanning, and compliance reporting for your projects.
+                    </p>
+                    <p class="addon-price">$45<span class="price-period">/month</span></p>
+                </article>
+
+                <!-- Add-on 4: GitHub Pages Plus -->
+                <article class="addon-card">
+                    <div class="addon-icon">📄</div>
+                        Premium hosting for your static sites with enhanced performance and features.
+                    </p>
+                    <p class="addon-price">$20<span class="price-period">/month</span></p>
+                </article>
+                <article class="addon-card">
+                    <div class="addon-icon">📊</div>
+                    <h3 class="addon-name">Insights Premium</h3>
+                    <p class="addon-description">
+                        Advanced analytics and metrics for deeper insights into your repository activity.
+                    </p>
+                    <p class="addon-price">$15<span class="price-period">/month</span></p>
+                </article>
+                <article class="addon-card">
+                    <div class="addon-icon">🎧</div>
+                    <h3 class="addon-name">Premium Support</h3>
+                    <p class="addon-description">
+                        Priority 24/7 support with dedicated success manager for your organization.
+                    </p>
+                    <p class="addon-price">$100<span class="price-period">/month</span></p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
