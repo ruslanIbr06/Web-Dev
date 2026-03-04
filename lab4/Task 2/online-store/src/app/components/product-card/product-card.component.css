@@ -1,0 +1,48 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+.img-container { height: 200px; display: flex; align-items: center; justify-content: center; }
+
+.main-img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.thumbnails { display: flex; justify-content: center; gap: 5px; margin: 10px 0; }
+
+.thumb { 
+  width: 40px; height: 40px; object-fit: cover; 
+  border: 2px solid #eee; border-radius: 4px; cursor: pointer; 
+}
+
+.thumb.active { border-color: #f14635; }
+
+.info h3 { font-size: 1.1rem; margin: 10px 0; height: 2.4em; overflow: hidden; }
+
+.desc { font-size: 0.85rem; color: #666; height: 3em; overflow: hidden; }
+
+.price { font-size: 1.3rem; font-weight: bold; margin: 10px 0; color: #333; }
+
+.actions { margin-top: auto; display: flex; flex-direction: column; gap: 8px; }
+
+.kaspi-btn { 
+  background: #f14635; color: white; text-align: center; 
+  padding: 10px; border-radius: 8px; text-decoration: none; font-weight: bold;
+}
+
+.share-row { display: flex; gap: 5px; }
+
+.wa-btn, .tg-btn { 
+  flex: 1; border: none; padding: 8px; border-radius: 6px; 
+  color: white; cursor: pointer; font-weight: bold; 
+}
+
+.wa-btn { background: #25D366; }
+.btn-wa:hover { opacity: 0.8; }
+.tg-btn { background: #0088cc; }

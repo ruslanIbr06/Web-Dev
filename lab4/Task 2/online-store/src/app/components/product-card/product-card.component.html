@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="img-container">
+    <img [src]="product.images[selectedImageIndex()]" class="main-img" alt="product">
+  </div>
+
+  <div class="thumbnails">
+    @for (img of product.images; track $index) {
+      <img 
+        [src]="img" 
+        (click)="changeImage($index)" 
+        [class.active]="selectedImageIndex() === $index"
+        class="thumb">
+    }
+  </div>
+
+  <div class="info">
+    <h3>{{ product.name }}</h3>
+    <p class="desc">{{ product.description }}</p>
+    <div class="rating">⭐ {{ product.rating }}</div>
+    <div class="price">{{ product.price | number:'1.0-0' }} ₸</div>
+  </div>
+
+  <div class="actions">
+    <a [href]="product.link" target="_blank" class="kaspi-btn">В магазин</a>
+    <div class="share-row">
+      <button (click)="share('wa')" class="wa-btn">WA</button>
+      <button (click)="share('tg')" class="tg-btn">TG</button>
+    </div>
+  </div>
+</div>
