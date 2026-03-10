@@ -1,0 +1,37 @@
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.category-nav button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #0081f2;
+  background: white;
+  color: #0081f2;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.category-nav button.active {
+  background: #0081f2;
+  color: white;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  align-items: stretch;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 50px;
+  color: #888;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,17 @@
+<div class="category-nav">
+  @for (cat of categories; track cat) {
+    <button (click)="selectCategory(cat)" [class.active]="selectedCategory === cat">
+      {{ cat }}
+    </button>
+  }
+</div>
+
+@if (selectedCategory) {
+  <div class="product-grid">
+    @for (p of filteredProducts; track p.id) {
+      <app-product-item [product]="p" (remove)="onProductRemove($event)"></app-product-item>
+    }
+  </div>
+} @else {
+  <div class="welcome">Выберите категорию, чтобы увидеть товары</div>
+}

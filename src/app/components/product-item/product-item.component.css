@@ -1,0 +1,117 @@
+:host {
+  display: flex;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  height: 2.8em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  flex-shrink: 0;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.price {
+  color: #e91e63;
+  font-size: 1.2rem;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.like-btn, .del-btn {
+  flex: 1;
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.like-btn.liked {
+  border-color: #ff4d4f;
+  color: #ff4d4f;
+  background: #fff1f0;
+}
+
+.share-box {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.share-box button {
+  flex: 1;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid #eee;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.kaspi-btn {
+  display: block;
+  background: #0081f2;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
